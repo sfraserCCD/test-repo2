@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+/* Universal reset */
+*,
+*:before,
+*:after {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+nav {
+    background-color:rgb(10, 10, 84);
+    padding: 1rem;
+}
+nav ul {
+    list-style-type:none;
+    display:flex;
+    gap:1.2rem;
+    justify-content: flex-end;
+}
+nav ul li a {
+    color:white;
+    text-decoration:none;
+    font-size:1.1rem;
+}
+
+main {
+    max-width:850px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    margin-top:1.5rem;
+    margin-bottom:1rem;
+}
+
+footer {
+    display:flex;
+    justify-content: center;
+    align-content:center;
+    align-items:center;
+    background-color:black;
+    color:white;
+    padding: 1rem;
+    position:absolute;
+    bottom:0;
+    width:100%;
+}
+
+/* ====== specific styles ====== */
+
+/* home page styles */
+#home article {
+    display:flex;
+    align-items:center;
+    flex-direction:column;
+    gap:20px;
+}
+/* end home page styles */
+
+/* about page styles */
+#about article {
+    display:flex;
+    align-items:center;
+    flex-direction:row;
+    gap:20px;
+}
+/* end home page styles */
+
+/* ===== end specific styles ====== */
+
+/* media queries */
+@media only screen and (max-width:450px) {
+    #about article {
+        flex-direction:column;
+    }
+}
